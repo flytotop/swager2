@@ -1,0 +1,558 @@
+2019-11-19 09:33:40,851 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 09:33:45,861 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9421 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 09:33:45,862 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 09:33:45,900 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 09:33:45,900 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 09:33:46,247 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 09:33:46,266 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-11-19 09:33:46,473 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 09:33:46,481 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 09:33:46,493 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$c04dc42e.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$c04dc42e$$FastClassBySpringCGLIB$$bdcf0c71.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$c04dc42e.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 09:36:08,114 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 09:36:13,121 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9431 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 09:36:13,122 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 09:36:13,190 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 09:36:13,190 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 09:36:13,733 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 09:36:13,757 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-11-19 09:36:14,121 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 09:36:14,134 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 09:36:14,151 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$a13d9c3b.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$a13d9c3b$$FastClassBySpringCGLIB$$212bae4a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$a13d9c3b.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 09:40:15,222 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 09:40:20,227 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9463 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 09:40:20,228 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 09:40:20,283 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 09:40:20,284 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 09:40:20,728 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 09:40:20,753 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-11-19 09:40:21,084 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 09:40:21,094 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 09:40:21,107 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$53ebbcbc.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$53ebbcbc$$FastClassBySpringCGLIB$$58d376d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$53ebbcbc.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 09:42:40,621 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5000 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 09:42:45,627 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9479 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 09:42:45,627 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 09:42:45,681 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 09:42:45,682 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 09:42:46,121 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 09:42:46,142 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-11-19 09:42:46,453 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 09:42:46,464 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 09:42:46,476 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$839a7b25.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$839a7b25$$FastClassBySpringCGLIB$$f1f9d581.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$839a7b25.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 09:47:00,650 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 09:47:05,657 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9486 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 09:47:05,657 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 09:47:05,705 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 09:47:05,705 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 09:47:06,164 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 09:47:06,186 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-11-19 09:47:06,501 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 09:47:06,510 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 09:47:06,522 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$6096a60d.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$6096a60d$$FastClassBySpringCGLIB$$813949b0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$6096a60d.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 10:00:13,205 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 10:00:18,210 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9504 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 10:00:18,210 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 10:00:18,263 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 10:00:18,263 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 10:00:18,706 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 10:00:18,728 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-11-19 10:00:19,041 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 10:00:19,051 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 10:00:19,062 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$454932a4.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$454932a4$$FastClassBySpringCGLIB$$b1833148.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$454932a4.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 10:07:28,737 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 10:07:33,744 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9508 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 10:07:33,745 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 10:07:33,805 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 10:07:33,805 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 10:07:34,355 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 10:07:34,384 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-19 10:07:34,769 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 10:07:34,781 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 10:07:34,797 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$5519ef83.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$5519ef83$$FastClassBySpringCGLIB$$145d4d14.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$5519ef83.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 10:08:17,976 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 10:08:22,982 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9511 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 10:08:22,983 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 10:08:23,039 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 10:08:23,039 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 10:08:23,484 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 10:08:23,508 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-19 10:08:23,815 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 10:08:23,825 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 10:08:23,834 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$7638c05a.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$7638c05a$$FastClassBySpringCGLIB$$1c5fc82d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$7638c05a.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
+2019-11-19 11:01:40,590 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 11:01:45,601 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9620 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 11:01:45,601 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 11:01:45,645 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 11:01:45,645 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 11:01:46,039 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 11:01:46,059 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-11-19 11:01:46,283 [restartedMain] WARN  [,,] o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+2019-11-19 11:01:46,290 [restartedMain] INFO  [,,] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-19 11:01:46,300 [restartedMain] ERROR [,,] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createRestApi' defined in class path resource [com/xiao/emsoft/swager/SwaggerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xiao.emsoft.DemoApplication.main(DemoApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'createRestApi' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/http/MediaType
+	at springfox.documentation.spi.DocumentationType.<init>(DocumentationType.java:44)
+	at springfox.documentation.spi.DocumentationType.<clinit>(DocumentationType.java:26)
+	at com.xiao.emsoft.swager.SwaggerConfiguration.createRestApi(SwaggerConfiguration.java:31)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$792c774d.CGLIB$createRestApi$0(<generated>)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$792c774d$$FastClassBySpringCGLIB$$bba7add3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.xiao.emsoft.swager.SwaggerConfiguration$$EnhancerBySpringCGLIB$$792c774d.createRestApi(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 common frames omitted
