@@ -1,6 +1,7 @@
 package com.xiao.emsoft.entry;
 
-        import lombok.Data;
+import lombok.Data;
+
 
 /**
  * @Auther: xhf

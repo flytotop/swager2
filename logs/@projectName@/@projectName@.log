@@ -556,3 +556,202 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.http.MediaType
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 37 common frames omitted
+2019-11-19 13:51:42,455 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 13:51:47,463 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9916 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 13:51:47,464 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 13:51:47,506 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 13:51:47,506 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 13:51:47,507 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 13:51:48,189 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 13:51:48,207 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-11-19 13:51:48,477 [restartedMain] INFO  [,,] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 13:51:48,802 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-19 13:51:48,811 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-11-19 13:51:48,812 [restartedMain] INFO  [,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-19 13:51:48,812 [restartedMain] INFO  [,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-19 13:51:48,892 [restartedMain] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-19 13:51:48,892 [restartedMain] INFO  [,,] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1385 ms
+2019-11-19 13:51:49,297 [restartedMain] INFO  [,,] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-19 13:51:49,409 [restartedMain] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 13:51:49,447 [restartedMain] INFO  [,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-19 13:51:49,624 [restartedMain] WARN  [,,] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-19 13:51:49,678 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-19 13:51:49,697 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-19 13:51:49,724 [restartedMain] INFO  [,,] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-19 13:51:49,741 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-11-19 13:51:49,766 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 13:51:49,768 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Started DemoApplication in 22.829 seconds (JVM running for 28.537)
+2019-11-19 14:01:51,369 [SpringContextShutdownHook] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:12:14,547 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 14:12:19,555 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 9994 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 14:12:19,556 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 14:12:19,601 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 14:12:19,601 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 14:12:19,601 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 14:12:20,268 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 14:12:20,290 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-11-19 14:12:20,547 [restartedMain] INFO  [,,] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 14:12:20,880 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-19 14:12:20,888 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-11-19 14:12:20,888 [restartedMain] INFO  [,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-19 14:12:20,888 [restartedMain] INFO  [,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-19 14:12:20,954 [restartedMain] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-19 14:12:20,954 [restartedMain] INFO  [,,] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1353 ms
+2019-11-19 14:12:21,372 [restartedMain] INFO  [,,] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-19 14:12:21,469 [restartedMain] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:12:21,502 [restartedMain] INFO  [,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-19 14:12:21,684 [restartedMain] WARN  [,,] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-19 14:12:21,737 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-19 14:12:21,756 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-19 14:12:21,787 [restartedMain] INFO  [,,] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-19 14:12:21,806 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-11-19 14:12:21,832 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 14:12:21,834 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Started DemoApplication in 22.729 seconds (JVM running for 28.458)
+2019-11-19 14:13:18,187 [http-nio-8080-exec-1] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 14:13:18,187 [http-nio-8080-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-19 14:13:18,195 [http-nio-8080-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-11-19 14:31:56,925 [SpringContextShutdownHook] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:32:25,734 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 14:32:30,740 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 10084 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 14:32:30,741 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 14:32:30,781 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 14:32:30,782 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 14:32:30,782 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 14:32:31,312 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 14:32:31,325 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-11-19 14:32:31,518 [restartedMain] INFO  [,,] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 14:32:31,843 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-19 14:32:31,850 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-11-19 14:32:31,850 [restartedMain] INFO  [,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-19 14:32:31,850 [restartedMain] INFO  [,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-19 14:32:31,909 [restartedMain] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-19 14:32:31,910 [restartedMain] INFO  [,,] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1128 ms
+2019-11-19 14:32:32,237 [restartedMain] INFO  [,,] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-19 14:32:32,321 [restartedMain] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:32:32,347 [restartedMain] INFO  [,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-19 14:32:32,496 [restartedMain] WARN  [,,] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-19 14:32:32,545 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-19 14:32:32,558 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-19 14:32:32,579 [restartedMain] INFO  [,,] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-19 14:32:32,592 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-11-19 14:32:32,616 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-19 14:32:32,618 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Started DemoApplication in 22.275 seconds (JVM running for 27.9)
+2019-11-19 14:32:59,297 [http-nio-8080-exec-1] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 14:32:59,298 [http-nio-8080-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-19 14:32:59,303 [http-nio-8080-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2019-11-19 14:34:14,513 [SpringContextShutdownHook] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:34:42,104 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 14:34:47,111 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 10094 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 14:34:47,112 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 14:34:47,150 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 14:34:47,151 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 14:34:47,151 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 14:34:47,684 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 14:34:47,697 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-11-19 14:34:47,896 [restartedMain] INFO  [,,] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 14:34:48,226 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8044 (http)
+2019-11-19 14:34:48,233 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:34:48,233 [restartedMain] INFO  [,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-19 14:34:48,233 [restartedMain] INFO  [,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-19 14:34:48,293 [restartedMain] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-19 14:34:48,293 [restartedMain] INFO  [,,] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1142 ms
+2019-11-19 14:34:48,641 [restartedMain] INFO  [,,] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-19 14:34:48,735 [restartedMain] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:34:48,765 [restartedMain] INFO  [,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-19 14:34:48,925 [restartedMain] WARN  [,,] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-19 14:34:48,978 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-19 14:34:48,991 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-19 14:34:49,016 [restartedMain] INFO  [,,] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-19 14:34:49,031 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:34:49,057 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8044 (http) with context path ''
+2019-11-19 14:34:49,060 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Started DemoApplication in 22.367 seconds (JVM running for 28.003)
+2019-11-19 14:35:40,265 [http-nio-8044-exec-1] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 14:35:40,265 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-19 14:35:40,272 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-11-19 14:43:51,608 [SpringContextShutdownHook] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:44:20,463 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 14:44:25,469 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 10119 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 14:44:25,470 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 14:44:25,507 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 14:44:25,507 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 14:44:25,508 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 14:44:26,023 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 14:44:26,038 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-11-19 14:44:26,241 [restartedMain] INFO  [,,] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 14:44:26,546 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8044 (http)
+2019-11-19 14:44:26,553 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:44:26,553 [restartedMain] INFO  [,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-19 14:44:26,553 [restartedMain] INFO  [,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-19 14:44:26,614 [restartedMain] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-19 14:44:26,614 [restartedMain] INFO  [,,] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1106 ms
+2019-11-19 14:44:26,957 [restartedMain] INFO  [,,] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-19 14:44:27,038 [restartedMain] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:44:27,064 [restartedMain] INFO  [,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-19 14:44:27,221 [restartedMain] WARN  [,,] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-19 14:44:27,267 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-19 14:44:27,278 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-19 14:44:27,299 [restartedMain] INFO  [,,] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-19 14:44:27,312 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:44:27,335 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8044 (http) with context path ''
+2019-11-19 14:44:27,337 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Started DemoApplication in 22.264 seconds (JVM running for 27.883)
+2019-11-19 14:44:37,090 [http-nio-8044-exec-1] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 14:44:37,090 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-19 14:44:37,096 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2019-11-19 14:47:42,631 [SpringContextShutdownHook] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:48:11,125 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 14:48:16,132 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 10130 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 14:48:16,133 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 14:48:16,170 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 14:48:16,170 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 14:48:16,170 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 14:48:16,763 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 14:48:16,779 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-11-19 14:48:16,975 [restartedMain] INFO  [,,] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 14:48:17,296 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8044 (http)
+2019-11-19 14:48:17,303 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:48:17,303 [restartedMain] INFO  [,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-19 14:48:17,304 [restartedMain] INFO  [,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-19 14:48:17,366 [restartedMain] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-19 14:48:17,366 [restartedMain] INFO  [,,] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1196 ms
+2019-11-19 14:48:17,718 [restartedMain] INFO  [,,] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-19 14:48:17,816 [restartedMain] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:48:17,846 [restartedMain] INFO  [,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-19 14:48:18,007 [restartedMain] WARN  [,,] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-19 14:48:18,055 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-19 14:48:18,068 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-19 14:48:18,094 [restartedMain] INFO  [,,] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-19 14:48:18,115 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:48:18,141 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8044 (http) with context path ''
+2019-11-19 14:48:18,144 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Started DemoApplication in 22.404 seconds (JVM running for 28.054)
+2019-11-19 14:48:37,365 [http-nio-8044-exec-1] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 14:48:37,366 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-19 14:48:37,372 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2019-11-19 14:52:20,369 [SpringContextShutdownHook] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:52:49,242 [restartedMain] WARN  [,,] o.s.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019-11-19 14:52:54,251 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Starting DemoApplication on xiaohanfengdeMacBook-Pro.local with PID 10141 (started by xiaohanfeng in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing)
+2019-11-19 14:52:54,252 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - The following profiles are active: stream,database,cloud
+2019-11-19 14:52:54,293 [restartedMain] INFO  [,,] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/xiaohanfeng/Documents/代码库/账户支付系统/testing/lib/ojdbc8.jar referenced one or more files that do not exist: file:/Users/xiaohanfeng/Documents/%e4%bb%a3%e7%a0%81%e5%ba%93/%e8%b4%a6%e6%88%b7%e6%94%af%e4%bb%98%e7%b3%bb%e7%bb%9f/testing/lib/oraclepki.jar
+2019-11-19 14:52:54,293 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-19 14:52:54,294 [restartedMain] INFO  [,,] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-19 14:52:54,816 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-19 14:52:54,829 [restartedMain] INFO  [,,] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-11-19 14:52:55,017 [restartedMain] INFO  [,,] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-19 14:52:55,310 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8044 (http)
+2019-11-19 14:52:55,317 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:52:55,317 [restartedMain] INFO  [,,] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-19 14:52:55,317 [restartedMain] INFO  [,,] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-19 14:52:55,377 [restartedMain] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-19 14:52:55,377 [restartedMain] INFO  [,,] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1083 ms
+2019-11-19 14:52:55,698 [restartedMain] INFO  [,,] s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-19 14:52:55,785 [restartedMain] INFO  [,,] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 14:52:55,815 [restartedMain] INFO  [,,] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-19 14:52:55,968 [restartedMain] WARN  [,,] o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-19 14:52:56,012 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-19 14:52:56,023 [restartedMain] INFO  [,,] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-19 14:52:56,044 [restartedMain] INFO  [,,] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-19 14:52:56,057 [restartedMain] INFO  [,,] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8044"]
+2019-11-19 14:52:56,080 [restartedMain] INFO  [,,] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8044 (http) with context path ''
+2019-11-19 14:52:56,083 [restartedMain] INFO  [,,] com.xiao.emsoft.DemoApplication - Started DemoApplication in 22.246 seconds (JVM running for 27.943)
+2019-11-19 14:53:13,248 [http-nio-8044-exec-1] INFO  [,,] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-19 14:53:13,249 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-19 14:53:13,255 [http-nio-8044-exec-1] INFO  [,,] o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
