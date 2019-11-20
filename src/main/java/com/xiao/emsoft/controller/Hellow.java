@@ -13,8 +13,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Api(tags = "swager测试")
 public interface Hellow {
-    @ApiOperation("sahellow")
+    @ApiOperation(value = "sayhellow", tags = "swager测试")
     @RequestMapping(method = RequestMethod.GET,path = "hello/word")
     String sayhellow();
+//    @ApiOperation(value = "jpa基础测试", tags = "swager测试")
+//    @RequestMapping(method = RequestMethod.GET ,path = "hello/jpa")
+
+
 
 }
