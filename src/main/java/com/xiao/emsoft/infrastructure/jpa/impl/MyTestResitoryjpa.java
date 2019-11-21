@@ -3,6 +3,7 @@ package com.xiao.emsoft.infrastructure.jpa.impl;
 import com.xiao.emsoft.domain.repository.MyTestRepo;
 import com.xiao.emsoft.infrastructure.jpa.MyTestResitory;
 import com.xiao.emsoft.infrastructure.po.MyTestPo;
+import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -21,6 +22,8 @@ public class MyTestResitoryjpa implements MyTestRepo {
     @Override
     public void test() {
         MyTestPo po=new MyTestPo();
+        po.setStatus(1);
+        myTestResitory.findAll(Example.of(po));
         po.setChannelType("00001");
         po.setCheckDate("2019-11-19");
         po.setCheckTotal(Long.parseLong("111"));
