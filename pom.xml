@@ -187,7 +187,7 @@
 <!--                    <artifactId>org.springframework.boot:spring-boot-starter-webflux:2.0.4.RELEASE</artifactId>-->
 <!--                </exclusion>-->
 <!--            </exclusions>-->
-            <version>2.1.6</version>
+            <version>3.1.2</version>
         </dependency>
         <dependency>
             <groupId>de.codecentric</groupId>
